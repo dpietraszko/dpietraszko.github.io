@@ -3,6 +3,7 @@
  
 .icon-mail:before { content: '\2709'; } /* '✉' */
 .icon-twitter:before { content: '\f099'; } /* '' */
+.icon-facebook:before { content: '\f09a'; } /* '' */
 .icon-mail-alt:before { content: '\f0e0'; } /* '' */
 .icon-linkedin:before { content: '\f0e1'; } /* '' */
 .icon-laptop:before { content: '\f109'; } /* '' */
@@ -10,7 +11,8 @@
 .icon-css3:before { content: '\f13c'; } /* '' */
 .icon-youtube:before { content: '\f167'; } /* '' */
 .icon-graduation-cap:before { content: '\f19d'; } /* '' */
+.icon-git-squared:before { content: '\f1d2'; } /* '' */
 .icon-git:before { content: '\f1d3'; } /* '' */
 .icon-facebook-official:before { content: '\f230'; } /* '' */
-.icon-user-o:before { content: '\f2c0'; } /* '' */
+.icon-user:before { content: '👤'; } /* '\1f464' */
 .icon-phone:before { content: '📞'; } /* '\1f4de' */
