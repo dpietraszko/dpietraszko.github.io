@@ -1,0 +1,26 @@
+/* header.css */
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    min-width: 200px;
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header__nav--top {
+    min-width: 100px;
+    min-height: 20px;
+}
+
+.header__nav--bottom {
+    min-width: 100px;
+    min-height: 40px;
+}
+
