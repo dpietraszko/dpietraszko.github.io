@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="./images/logo/male_logo_dp_v2.png" type="image/png" sizes="22x15">
   <title>PROGRAMISTA - DAWID PIETRASZKO</title>
 
   <meta name="description" content="Portfolio Dawida Pietraszko">
@@ -13,90 +15,393 @@
 
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/base.css">
-  <link rel="stylesheet" href="./styles/header.css">
-  <link rel="stylesheet" href="./styles/content.css">
-  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="./styles/mobile.css">
+  <link rel="stylesheet" media="(min-width: 600px)" href="./styles/tablet.css">
+  <link rel="stylesheet" media="(min-width: 1200px)" href="./styles/desktop.css">
+
 
   <link rel="stylesheet" href="./css/fontello.css">
 
-  <!-- <link rel="stylesheet" href="fontello-e4ef87c0/fontello-e4ef87c0/css/fontello.css" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato&display=swap" rel="stylesheet"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="./jquery.scrollTo.min.js"></script>
 
 </head>
 
 <body>
-
-  <header class="header row">
-    <div class="header__container container">
+  <section class="section-header content row">
+    <header class="header container">
       <h1 class="header__logo cell">
-        <a href="https://dpietraszko.github.io/" target="_blank">
-          <img src="./img/logo_v10.jpg" alt="logo">
-        </a>
+        <a href="https://dpietraszko.github.io/" target="_blank"><img src="./images/logo/logo_dp_v5.png" alt="logo"></a>
       </h1>
-      <div class="header__nav">
-        <div class="header__nav--top cell">
-
+      <nav class="header__nav cell">
+        <label for="menu-switcher" class="menu">
+        </label>
+        <input type="checkbox" id="menu-switcher">
+        <i class="icon-menu"></i>
+        <div class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" id="linkHome">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" id="linkAboutMe">O mnie</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" id="linkMyCompetences">Zdolności</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" id="linkPortfolio">Portfolio</a>
+              <label for="menu-switcher-two" class="submenu">
+              </label>
+              <input type="checkbox" id="menu-switcher-two">
+              <i class="icon-plus"></i>
+              <ul class="nav__dropdown dropdown">
+                <li class="dropdown__item">
+                  <a href="./subpages/project_1.html">Automatyzacja celi</a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="./subpages/project_2.html">Sterowanie pracą pieca (PLC, OPC Serwer, InTouch)</a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="./subpages/project_3.html">Stanowisko dokręcania nakrętek</a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="./subpages/project_4.html">Stanowisko szkoleniowe z prasą Kistler</a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="./subpages/project_5.html">Stanowisko montażu koła fonicznego</a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="./subpages/project_6.html">Linia obróbki wału korbowego</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a href="#" id="linkOffer">Oferta</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" id="linkContact">Kontakt</a>
+            </li>
+          </ul>
+          <div class="nav__contact">
+            <div class="nav__phone">
+              <a href="tel:+48660572789" class="contact-link">
+                <i class="icon-phone"></i>+48 660 572 789
+              </a>
+            </div>
+            <div class="nav__mail">
+              <a href="mailto:kdpietraszko@wp.pl" class="contact-link">
+                <i class="icon-mail-alt"></i>kdpietraszko@wp.pl
+              </a>
+            </div>
+            <div class="nav__git">
+              <a href="https://github.com/dpietraszko?tab=repositories" target="_blank" class="social-link">
+                <i class="icon-git"></i>
+              </a>
+            </div>
+            <div class="nav__in">
+              <a href="https://pl.linkedin.com/in/dawid-pietraszko-0a1879127" target="_blank" class="social-link">
+                <i class="icon-linkedin"></i>
+              </a>
+            </div>
+          </div>
         </div>
-        <nav class="header__nav--bottom cell">
-
-        </nav>
+      </nav>
+    </header>
+    <article class="content" id="goToHome">
+      <div class="content__container container">
+        <div class="content-header cell">
+          <h1 class="content-header__header">Witaj w dpietraszko.github.io</h1>
+          <button class="content-header__button" id="linkOfferButton">OFERTA</button>
+        </div>
       </div>
-    </div>
-  </header>
-
-
-  <section class="content row">
-    <div class="content__container container">
-      <article class="content__article cell">
-
-        <p>DP WEBSITE</p>
-        <hr>
-        <p>PROGRAMOWANIE TO MOJA PASJA</p>
-
-      </article>
-    </div>
+    </article>
   </section>
 
-  <section class="content row">
-    <div class="content__container container">
-      <article class="content__article cell">
-
-        <p>DP O MNIE</p>
-        <hr>
-        <p>Jestem zajebisty i zajebiście umiem tańczyć i może kiedyś znajdę pracę, w której będę się spełniał</p>
-        <hr>
-
-        <div class="yt">
-          <a href="http://youtube.com" target="_blank" class="sociallink">
-            <i class="icon-youtube"></i>
-          </a>
+  <main>
+    <a href="#" class="scrollUp"></a>
+    <section class="aboutMe content row" id="goToAboutMe">
+      <div class="content__container container">
+        <div class="aboutMe__container cell">
+          <h1 class="aboutMe__header">DAWID PIETRASZKO</h1>
+          <p class="aboutMe__profession">AUTOMATYK</p>
+          <p class="aboutMe__profession">PROGRAMISTA PLC</p>
+          <figure class="aboutMe__photo">
+            <img class="aboutMe__image" src="./images/photo/dawid_pietraszko.png" alt="Dawid Pietraszko">
+          </figure>
         </div>
+        <article class="aboutMe__container aboutMe__container--background cell">
+          <h1 class="aboutMe__title">O mnie</h1>
+          <p class="aboutMe__description">Z wykształcenia jestem automatykiem - programistą PLC. Ukończyłem studia
+            na Akademii Górniczo-Hutniczej im. Stanisława Staszica w Krakowie o specjalizacji - Automatyka
+            przemysłowa i automatyka budynków. Ponadto również w Krakowie ukończyłem studia podyplomowe o
+            specjalizacji - Przemysłowe systemy sterowania. Dlatego systemy przemysłowe jak i informatyczne nie są mi
+            obce, gdyż mam z nimi do czynienia w pracy na co dzień, przy realizacji różnych projektów związanych z
+            automatyzacją i robotyzacją.</p>
 
-        <div class="git">
-          <a href="http://youtube.com" target="_blank" class="sociallink">
-            <i class="icon-git"></i>
-          </a>
+          <p class="aboutMe__description">Przy realizacji licznych projektów nabrałem doświadczenia w branży automatyki
+            przemysłowej. Tworzyłem oprogramowanie dla sterowników PLC i paneli HMI. Uruchamiałem napędy, roboty
+            przemysłowe oraz inne urządzenia automatyki przemysłowej. Od dawna moją pasją jest programowanie dlatego
+            chcąc się dalej rozwiajać postanowiłem poznać język JavaScript, a co za tym idzie HTML5 i CSS3. Mam na swoim
+            koncie pierwsze projekty związane z tworzeniem stron internetowych, w których wykorzystłem oprócz HTML5,
+            CSS3 i JavaScript, bibliotekę jQuery oraz Bootstrap.</p>
+
+          <p class="aboutMe__description">Interesuję się nowymi technologiami, tańcem latynoamerykańskim oraz ludowym,
+            a także piłką nożną. W wolnym czasie dbam o kondycje fizyczną jak i psychiczną, grając w piłkę nożną,
+            jeżdżąc na rowerze oraz chodząc na siłownie. Kieruje się powiedzeniem: "W zdrowym ciele, zdrowy duch".</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="features content row">
+      <header class="features-header content__container container">
+        <h1 class="features-header__header">Jestem</h1>
+      </header>
+      <ul class="content-features-pages content__container container">
+        <li class="features-page features-page--shadow">
+          <figure class="features-page__icon features-page__icon--working">
+            <i class="icon-wrench"></i>
+          </figure>
+          <div class="features-page__txt">
+            <span class="features-page__title">Pracowity</span>
+            <p class="features-page__description">Ciągle dążę do wyznaczonych sobie celów. Solidnie i profesjonalnie
+              podchodzę do swoich zadań.</p>
+          </div>
+        </li>
+        <li class="features-page features-page--shadow">
+          <figure class="features-page__icon features-page__icon--ambitious">
+            <i class="icon-college"></i>
+          </figure>
+          <div class="features-page__txt">
+            <span class="features-page__title">Ambitny</span>
+            <p class="features-page__description">Stawiam sobie trudne cele, dlatego ciągle chcę się rozwijać i uczyć,
+              by móc je osiągnąć.</p>
+          </div>
+        </li>
+        <li class="features-page features-page--shadow">
+          <figure class="features-page__icon features-page__icon--ingenious">
+            <i class="icon-comment-empty"></i>
+          </figure>
+          <div class="features-page__txt">
+            <span class="features-page__title">Pomysłowy</span>
+            <p class="features-page__description">Mam wiele nowych, dobrych pomysłów, które staram się realizować.</p>
+          </div>
+        </li>
+        <li class="features-page features-page--shadow">
+          <figure class="features-page__icon features-page__icon--organized">
+            <i class="icon-calendar"></i>
+          </figure>
+          <div class="features-page__txt">
+            <span class="features-page__title">Zorganizowany</span>
+            <p class="features-page__description">Mój czas jest odpowiednio zagospodarowany. Mam cele, a do ich
+              spełnienia potrzebny jest plan dnia.</p>
+          </div>
+        </li>
+        <li class="features-page features-page--shadow">
+          <figure class="features-page__icon features-page__icon--consistent">
+            <i class="icon-arrows-cw-outline"></i>
+          </figure>
+          <div class="features-page__txt">
+            <span class="features-page__title">Konsekwentny</span>
+            <p class="features-page__description">Wytrwale dążę do wyznaczonych sobie celów. Zadania realizuje do końca.
+            </p>
+          </div>
+        </li>
+        <li class="features-page features-page--shadow">
+          <figure class="features-page__icon features-page__icon--smiling">
+            <i class="icon-emo-laugh"></i>
+          </figure>
+          <div class="features-page__txt">
+            <span class="features-page__title">Uśmiechnięty</span>
+            <p class="features-page__description">W życiu prywatnym jak i zawodowym towarzyszy mi uśmiech na twarzy.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="myCompetences content row" id="goToMyCompetences">
+      <header class="myCompetences-header content__container container">
+        <h1 class="myCompetences-header__header">Moje kompetencje</h1>
+      </header>
+      <div class="myCompetences-container container">
+        <ul class="myCompetences-bars content__container cell">
+          <li class="myCompetences-bar">
+            <p class="myCompetences-bar__txt">PLC (Siemens S7-300, S7-1200, S7-1500)</p>
+            <progress value="80" max="100" class="myCompetences-bar__progress"></progress>
+          </li>
+          <li class="myCompetences-bar">
+            <p class="myCompetences-bar__txt">HMI (TIA Portal, WinCC, HMI PRO CS)</p>
+            <progress value="90" max="100" class="myCompetences-bar__progress"></progress>
+          </li>
+          <li class="myCompetences-bar">
+            <p class="myCompetences-bar__txt">SCADA (Wonderware InTouch, iFix)</p>
+            <progress value="40" max="100" class="myCompetences-bar__progress"></progress>
+          </li>
+          <li class="myCompetences-bar">
+            <p class="myCompetences-bar__txt">Robot (Fanuc, Comau)</p>
+            <progress value="50" max="100" class="myCompetences-bar__progress"></progress>
+          </li>
+          <li class="myCompetences-bar">
+            <p class="myCompetences-bar__txt">EPLAN</p>
+            <progress value="30" max="100" class="myCompetences-bar__progress"></progress>
+          </li>
+        </ul>
+        <ul class="myCompetences-bars content__container cell">
+          <li class="myCompetences-bar">
+            <p class="myCompetences-bar__txt">HTML5</p>
+            <progress value="70" max="100" class="myCompetences-bar__progress"></progress>
+          </li>
+          <li class="myCompetences-bar">
+            <p class="myCompetences-bar__txt">CSS3</p>
+            <progress value="60" max="100" class="myCompetences-bar__progress"></progress>
+          </li>
+          <li class="myCompetences-bar">
+            <p class="myCompetences-bar__txt">JavaScript</p>
+            <progress value="70" max="100" class="myCompetences-bar__progress"></progress>
+          </li>
+          <li class="myCompetences-bar">
+            <p class="myCompetences-bar__txt">C#</p>
+            <progress value="20" max="100" class="myCompetences-bar__progress"></progress>
+          </li>
+          <li class="myCompetences-bar">
+            <p class="myCompetences-bar__txt">SQL</p>
+            <progress value="20" max="100" class="myCompetences-bar__progress"></progress>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="portfolio content row" id="goToPortfolio">
+      <header class="portfolio-header content__container container">
+        <h1 class="portfolio-header__header">Portfolio</h1>
+        <p class="portfolio-header__description">Zobacz co robiłem</p>
+      </header>
+      <ul class="portfolio-projects content__container container">
+        <li class="portfolio-project cell">
+          <figure class="portfolio-project__overlay">
+            <a class="portfolio-project__photo" href="./subpages/project_1.html"><img
+                src="./images/portfolio_v2/laptop-books_626x417.jpg" alt="project1"></a>
+            <a class="portfolio-project__link" href="./subpages/project_1.html">
+              <i class="portfolio-project__icon icon-search"></i>
+              <p class="portfolio-project__description">Automatyzacja celi</p>
+            </a>
+          </figure>
+        </li>
+        <li class="portfolio-project cell">
+          <figure class="portfolio-project__overlay">
+            <a class="portfolio-project__photo" href="./subpages/project_2.html"><img
+                src="./images/portfolio_v2/books-laptop-cup_626x417.jpg" alt="project2"></a>
+            <a class="portfolio-project__link" href="./subpages/project_2.html">
+              <i class="portfolio-project__icon icon-search"></i>
+              <p class="portfolio-project__description">Sterowanie pracą pieca (PLC, OPC Serwer, InTouch)</p>
+            </a>
+          </figure>
+        </li>
+        <li class="portfolio-project cell">
+          <figure class="portfolio-project__overlay">
+            <a class="portfolio-project__photo" href="./subpages/project_3.html"><img
+                src="./images/portfolio_v2/laptop-headphones_626x417.jpg" alt="project3"></a>
+            <a class="portfolio-project__link" href="./subpages/project_3.html">
+              <i class="portfolio-project__icon icon-search"></i>
+              <p class="portfolio-project__description">Stanowisko dokręcania nakrętek</p>
+            </a>
+          </figure>
+        </li>
+        <li class="portfolio-project cell">
+          <figure class="portfolio-project__overlay">
+            <a class="portfolio-project__photo" href="./subpages/project_4.html"><img
+                src="./images/portfolio_v2/books-laptop-flowers_626x417.jpg" alt="project4"></a>
+            <a class="portfolio-project__link" href="./subpages/project_4.html">
+              <i class="portfolio-project__icon icon-search"></i>
+              <p class="portfolio-project__description">Stanowisko szkoleniowe z prasą Kistler</p>
+            </a>
+          </figure>
+        <li class="portfolio-project cell">
+          <figure class="portfolio-project__overlay">
+            <a class="portfolio-project__photo" href="./subpages/project_5.html"><img
+                src="./images/portfolio_v2/books-laptop-camera_626x417.jpg" alt="project5"></a>
+            <a class="portfolio-project__link" href="./subpages/project_5.html">
+              <i class="portfolio-project__icon icon-search"></i>
+              <p class="portfolio-project__description">Stanowisko montażu koła fonicznego</p>
+            </a>
+          </figure>
+        </li>
+        <li class="portfolio-project cell">
+          <figure class="portfolio-project__overlay">
+            <a class="portfolio-project__photo" href="./subpages/project_6.html"><img
+                src="./images/portfolio_v2/pens-laptop-pens_626x417.jpg" alt="project6"></a>
+            <a class="portfolio-project__link" href="./subpages/project_6.html">
+              <i class="portfolio-project__icon icon-search"></i>
+              <p class="portfolio-project__description">Linia obróbki wału korbowego</p>
+            </a>
+          </figure>
+        </li>
+      </ul>
+    </section>
+
+    <section class="offer content row" id="goToOffer">
+      <header class="offer-header content__container container">
+        <h1 class="offer-header__header">Czym się zajmuję?</h1>
+      </header>
+      <ul class="offer-occupation content__container container">
+        <li class="offer-occupation__box offer-occupation__box--shadow">Tworzeniem programów dla sterowników PLC i
+          wizualizacji dla paneli operatorskich HMI.</li>
+        <li class="offer-occupation__box offer-occupation__box--shadow">Modyfikowaniem programów dla sterowników PLC i
+          wizualizacji dla paneli operatorskich HMI.</li>
+        <li class="offer-occupation__box offer-occupation__box--shadow">Tworzeniem projektów układów sterowania z
+          wykorzystaniem sterowników PLC.</li>
+        <li class="offer-occupation__box offer-occupation__box--shadow">Uruchamianiem robotów przemysłowych Fanuc i
+          Comau.</li>
+        <li class="offer-occupation__box offer-occupation__box--shadow">Uruchamianiem, serwisowaniem i integrowaniem
+          systemów automatyki.</li>
+        <li class="offer-occupation__box offer-occupation__box--shadow">Tworzeniem stron internetowych. Programowaniem w
+          JavaScript (React), HTML5, CSS3, RWD (ang. Responsive Web Design)</li>
+      </ul>
+    </section>
+
+    <section class="bottom-contact content row" id="goToContact">
+      <div class="bottom-contact__content content__container container">
+        <h1 class="bottom-contact__logo cell">
+          <a href="https://dpietraszko.github.io/" target="_blank"><img src="./images/logo/logo_dp_v3.png"
+              alt="logo"></a>
+        </h1>
+        <ul class="bottom-contact__info cell">
+          <li class="bottom-contact__phone">
+            <a href="tel:+48660572789" class="contact-link">
+              <i class="icon-phone"></i>+48 660 572 789
+            </a>
+          </li>
+          <li class="bottom-contact__mail">
+            <a href="mailto:kdpietraszko@wp.pl" class="contact-link">
+              <i class="icon-mail-alt"></i>kdpietraszko@wp.pl
+            </a>
+          </li>
+          <li class="bottom-contact__git">
+            <a href="https://github.com/dpietraszko?tab=repositories" target="_blank" class="social-link">
+              <i class="icon-git"></i>
+            </a>
+          </li>
+          <li class="bottom-contact__in">
+            <a href="https://pl.linkedin.com/in/dawid-pietraszko-0a1879127" target="_blank" class="social-link">
+              <i class="icon-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+        <div class="bottom-contact__logo cell">
+          <a href="https://dpietraszko.github.io/" target="_blank"><img src="./images/logo/logo_dp_v5.png"
+              alt="logo"></a>
         </div>
-
-        <div class="in">
-          <a href="http://youtube.com" target="_blank" class="sociallink">
-            <i class="icon-linkedin"></i>
-          </a>
-        </div>
-
-      </article>
-    </div>
-  </section>
-
+      </div>
+    </section>
+  </main>
 
   <footer class="footer row">
-    <div class="footer__container container">
-      <section class="footer__copyrights cell">
-        <p>&copy; 2020 Dawid Pietraszko. Thank you for visit. All Rights Reserved.</p>
-      </section>
-    </div>
+    <p>&copy; 2020 Dawid Pietraszko. Thank you for visit. All Rights Reserved.</p>
   </footer>
 
+
+  <script src="./js/app.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,666 @@
+/* ./styles/desktop.css */
+
+/* header */
+
+.header {
+    background-color: var(--color-pi);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    height: 100%;
+    min-height: 40px;
+    width: 10%;
+    padding-left: 5px;
+}
+
+.header__nav {
+    height: 100%;
+    min-height: 40px;
+    width: 85%;
+}
+
+.icon-menu {
+    position: absolute;
+    right: 15px;
+    top: 0px;
+    color: var(--color-beta);
+    font-size: 30px;
+}
+
+.icon-plus {
+    position: absolute;
+    right: 15px;
+    top: 180px;
+    color: var(--color-tau);
+    font-size: 18px;
+}
+
+#menu-switcher + .icon-menu {
+    color: var(--color-beta);
+    display: none;
+}
+
+#menu-switcher:checked + .icon-menu {
+    color: var(--color-sigma);
+    display: none;
+}
+
+#menu-switcher + .icon-menu + .nav  {
+    display: flex; 
+}
+
+#menu-switcher:checked + .icon-menu + .nav {
+    display: flex;
+}
+
+#menu-switcher-two + .icon-plus {
+    color: var(--color-tau);
+    display: none;
+}
+
+#menu-switcher-two:checked + .icon-plus {
+    color: var(--color-sigma);
+    display: none;
+}
+
+#menu-switcher-two + .icon-plus + .nav__dropdown {
+    display: none;
+    list-style-type: none;
+}
+
+#menu-switcher-two:checked + .icon-plus + .nav__dropdown {
+    display: none;
+}
+
+input {
+    display: none; 
+}
+
+.menu {
+	display: none;
+}
+
+.submenu {
+    display: none;
+}
+
+.nav {
+	height: 40px;
+	width: 100%;
+    line-height: 200%;
+    padding-right: 10px;
+}
+
+.nav__list {
+	height: 100%;
+	width: 100%;
+    line-height: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__item {
+	width: 90px;
+    height: 40px;
+    border: 1px solid var(--color-pi);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__item:hover {
+    border-top: 1px solid var(--color-beta);
+}
+
+.nav__item a {
+    font-size: 15px;
+    height: 40px;
+    text-decoration: none;
+    color: var(--color-tau);
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.dropdown a {
+    font-size: 14px;
+    color: var(--color-tau);
+	text-align: left;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+.nav__contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    border-top: 1px solid var(--color-pi);
+    border-bottom: 1px solid var(--color-pi);
+}
+
+.contact-link, .social-link {
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--color-tau);
+}
+
+.icon-phone, .icon-mail-alt {
+    font-size: 18px;
+    margin-right: 2px;
+}
+
+.icon-git, .icon-linkedin {
+    font-size: 17px;
+}
+
+.nav__git:hover, .nav__in:hover {
+    background-color: var(--color-beta);
+    border-radius: 5px;
+}
+
+.icon-git:hover, .icon-linkedin:hover  {
+    color: var(--color-kappa);
+}
+/* ------------------------- */
+
+
+
+
+
+/* content */
+
+.content__container {
+    display: block;
+}
+
+
+/* section-header content */
+
+.content-header {
+    min-height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content-header__header {
+    font-style: normal;
+    color: var(--color-beta);
+    font-size: 20px;
+    letter-spacing: 2px;
+    width: 40%;
+    text-align: center;
+    border-bottom: 1px dotted var(--color-beta);
+    padding-bottom: 10px;
+}
+
+.content-header__button {
+    font-weight: bold;
+    background-color: var(--color-pi);
+    border: 1px solid var(--color-beta);
+    font-size: 16px;
+    min-height: 50px;
+    width: 15%;
+    letter-spacing: 1px;
+}
+
+.content-header__button:hover {
+    border: 2px solid var(--color-beta);
+}
+/* ------------------------- */
+
+
+
+
+
+
+/* scrollUp */
+
+.scrollUp {
+    width: 28px;
+    height: 28px;
+    text-decoration: none;
+    background: url('.././images/icons/up_v7.png') no-repeat 0 0;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+    display: none;
+    background-color: var(--color-omega-transparent);
+    border-radius: 5px;
+}
+/* ------------------------- */
+
+
+
+
+
+
+/* about me content */
+
+.aboutMe__container {
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;  
+    padding: 50px;
+}
+
+.aboutMe__header {
+    font-size: 28px;
+    color: var(--color-epsilon);
+    width: 35%;
+    text-align: center;
+    letter-spacing: 3px;
+    border-bottom: 1px dotted var(--color-epsilon);
+}
+
+.aboutMe__profession {
+    font-style: normal;
+    font-size: 22px;
+    color: var(--color-epsilon);
+    width: 100%;
+    text-align: center;
+}
+
+.aboutMe__photo {
+    height: 20%;
+    width: 20%;
+    margin: 15px;
+}
+
+.aboutMe__image {
+    border: 1px solid var(--color-epsilon);
+    width: 100%;
+}
+
+.aboutMe__container--background {
+    background-color: var(--color-chi);
+}
+
+.aboutMe__title {
+    font-size: 26px;
+    color: var(--color-tau);
+    width: 20%;
+    text-align: center;
+    letter-spacing: 2px;
+    border-bottom: 1px dotted var(--color-tau);
+    margin: 15px;
+}
+
+.aboutMe__description {
+    font-style: normal;
+    font-size: 16px;
+    color: var(--color-tau);
+    width: 100%;
+    text-align: justify;
+    padding: 5px 30px 20px 30px;
+}
+/* ------------------------- */
+
+
+
+
+
+
+/* features content */
+
+.features-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-header__header {
+    font-style: normal;
+    font-size: 30px;
+    color: var(--color-alfa);
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 30px;
+    width: 20%;
+    border-bottom: 1px dotted var(--color-alfa);
+}
+
+.content-features-pages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    padding-left: 30px;
+}
+
+.features-page {
+    min-height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--color-epsilon);
+    padding: 20px;
+}
+
+.features-page--shadow {
+    background-color: var(--color-beta);
+    width: 90%;
+    box-shadow: 0 0 10px 5px var(--color-psi);
+    margin: 10px 0 10px 0;
+}
+
+.features-page__icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: var(--color-beta);
+}
+
+.features-page__icon--working {
+    background-color: var(--color-dzeta);
+}
+
+.features-page__icon--ambitious {
+    background-color: var(--color-eta);
+}
+
+.features-page__icon--ingenious {
+    background-color: var(--color-ksi);
+}
+
+.features-page__icon--organized {
+    background-color: var(--color-delta);
+}
+
+.features-page__icon--consistent {
+    background-color: var(--color-sigma);
+}
+
+.features-page__icon--smiling {
+    background-color: var(--color-ni);
+}
+
+.features-page__txt {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.features-page__title {
+    color: var(--color-gamma);
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.features-page__description {
+    color: var(--color-epsilon);
+    font-size: 14px;
+    text-align: center;
+}
+/* ------------------------- */
+
+
+
+
+
+/* my competences content */
+
+.myCompetences-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.myCompetences-header__header {
+    font-style: normal;
+    font-size: 26px;
+    color: var(--color-alfa);
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 30px;
+    width: 30%;
+    border-bottom: 1px dotted var(--color-alfa);
+}
+
+.myCompetences-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    padding-bottom: 40px;
+}
+
+.myCompetences-bar {
+    min-height: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 20px 10px 20px;
+}
+
+.myCompetences-bar__txt {
+    color: var(--color-alfa);
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.myCompetences-bar__progress {
+    width: 100%;
+    height: 10px;
+}
+/* ------------------------- */
+
+
+
+
+
+
+/* portfolio content */
+
+.portfolio-header {
+    min-height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.portfolio-header__header {
+    font-size: 26px;
+    color: var(--color-tau);
+    width: 20%;
+    text-align: center;
+    letter-spacing: 2px;
+    border-bottom: 1px dotted var(--color-tau);
+    margin: 20px;
+}
+
+.portfolio-header__description {
+    font-style: normal;
+    font-size: 16px;
+    color: var(--color-theta);
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.portfolio-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+}
+
+.portfolio-project {
+    min-height: 150px;
+    width: 100%;
+}
+
+.portfolio-project__overlay {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.portfolio-project__overlay .portfolio-project__link {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-chi-overlay);
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+    text-decoration: none;
+    color: var(--color-beta);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.portfolio-project__overlay:hover .portfolio-project__link {
+    opacity: 0.8;
+}
+
+.portfolio-project__icon {
+    font-size: 56px;
+    color: var(--color-beta);
+}
+
+.portfolio-project__description {
+    font-size: 16px;
+    color: var(--color-beta);
+}
+
+.portfolio-project__photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ------------------------- */
+
+
+
+
+
+/* offer content */
+
+.offer-header {
+    min-height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.offer-header__header {
+    font-style: normal;
+    font-size: 26px;
+    color: var(--color-alfa);
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 30px;
+    width: 35%;
+    border-bottom: 1px dotted var(--color-alfa);
+}
+
+.offer-occupation {
+    min-height: 40vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 33% 33% 33%;
+    justify-items: center;
+    padding-bottom: 20px;
+}
+
+.offer-occupation__box {
+    font-style: normal;
+    font-size: 15px;
+    color: var(--color-alfa);
+    min-height: 80px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.offer-occupation__box--shadow {
+    background-color: var(--color-beta);
+    width: 80%;
+    box-shadow: 0 0 15px 10px var(--color-psi);
+    border-radius: 20px;
+    margin: 10px 0 10px 0;
+}
+/* ------------------------- */
+
+
+
+
+
+/* bottom-contact content */
+
+.bottom-contact__content {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bottom-contact__info {
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottom-contact__git:hover, .bottom-contact__in:hover {
+    background-color: var(--color-beta);
+    border-radius: 5px;
+}
+/* ------------------------- */
+
+
+
+
+
+/* footer */
+
+.footer {
+    min-height: 50px;
+    width: 100%;
+    background-color: var(--color-alfa);
+    color: var(--color-theta);
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ------------------------- */

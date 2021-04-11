@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="../images/logo/male_logo_dp_v2.png" type="image/png" sizes="22x15">
+  <title>PROGRAMISTA - DAWID PIETRASZKO</title>
+
+  <meta name="description" content="Portfolio Dawida Pietraszko">
+  <meta name="keywords" content="portfolio, programowanie, PLC, CV, automatyka">
+  <meta name="author" content="Dawid Pietraszko">
+  <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+
+  <link rel="stylesheet" href="../styles/subpages/reset.css">
+  <link rel="stylesheet" href="../styles/subpages/base.css">
+  <link rel="stylesheet" href="../styles/subpages/mobile.css">
+  <link rel="stylesheet" media="(min-width: 600px)" href="../styles/subpages/tablet.css">
+  <link rel="stylesheet" media="(min-width: 1200px)" href="../styles/subpages/desktop.css">
+
+
+  <link rel="stylesheet" href="../css/fontello.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="../jquery.scrollTo.min.js"></script>
+
+</head>
+
+<body>
+  <section class="section-header content row">
+    <header class="header container">
+      <h1 class="header__logo cell">
+        <a href="https://dpietraszko.github.io/" target="_blank"><img src="../images/logo/logo_dp_v5.png"
+            alt="logo"></a>
+      </h1>
+      <nav class="header__nav cell">
+        <label for="menu-switcher" class="menu">
+        </label>
+        <input type="checkbox" id="menu-switcher">
+        <i class="icon-menu"></i>
+        <div class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="../index.html" id="linkHome">Home</a>
+            </li>
+            <li class="nav__item nav__item--border">
+              <a href="#" id="linkAboutMe">O mnie</a>
+            </li>
+            <li class="nav__item nav__item--border">
+              <a href="#" id="linkMyCompetences">Zdolności</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" id="linkPortfolio">Portfolio</a>
+              <label for="menu-switcher-two" class="submenu">
+              </label>
+              <input type="checkbox" id="menu-switcher-two">
+              <i class="icon-plus"></i>
+              <ul class="nav__dropdown dropdown">
+                <li class="dropdown__item">
+                  <a href="./project_1.html">Automatyzacja celi</a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="./project_2.html">Sterowanie pracą pieca (PLC, OPC Serwer, InTouch)</a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="./project_3.html">Stanowisko dokręcania nakrętek</a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="./project_4.html">Stanowisko szkoleniowe z prasą Kistler</a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="./project_5.html">Stanowisko montażu koła fonicznego</a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="./project_6.html">Linia obróbki wału korbowego</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item nav__item--border">
+              <a href="#" id="linkOffer">Oferta</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" id="linkContact">Kontakt</a>
+            </li>
+          </ul>
+          <div class="nav__contact">
+            <div class="nav__phone">
+              <a href="tel:+48660572789" class="contact-link">
+                <i class="icon-phone"></i>+48 660 572 789
+              </a>
+            </div>
+            <div class="nav__mail">
+              <a href="mailto:kdpietraszko@wp.pl" class="contact-link">
+                <i class="icon-mail-alt"></i>kdpietraszko@wp.pl
+              </a>
+            </div>
+            <div class="nav__git">
+              <a href="https://github.com/dpietraszko?tab=repositories" target="_blank" class="social-link">
+                <i class="icon-git"></i>
+              </a>
+            </div>
+            <div class="nav__in">
+              <a href="https://pl.linkedin.com/in/dawid-pietraszko-0a1879127" target="_blank" class="social-link">
+                <i class="icon-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </section>
+
+  <main>
+    <a href="#" class="scrollUp"></a>
+    <section class="project content row">
+      <div class="content__container project__container--background container">
+        <div class="project__container cell">
+          <header class="project-header">
+            <h1 class="project-header__header">Linia obróbki wału korbowego</h1>
+            <figure class="project-header__photo">
+              <img class="project-header__image" src="../images/portfolio_v2/pens-laptop-pens_626x417.jpg"
+                alt="Project 6">
+            </figure>
+          </header>
+          <article class="project-description cell">
+            <p class="project-description__txt">Projekt linia obróbki wału korbowego miał na celu przezbrojenie,
+              zmodyfikowanie linii obróbki wału na nowe typy, dodanie nowych maszyn oraz zautomatyzowanie procesów
+              przebiegających na całej linii. Najważniejszym punktem całego projektu była komunikacja całej linii z
+              systemem nadrzędnym, z systemem klasy MES (Manufacturing Excution System), który kontroluje przebieg
+              procesu produkcji detalu od początku do końca linii, na każdej operacji.</p>
+            <br>
+
+            <p class="project-description__txt">Nowo postawione maszyny przenoszące detal (portale) zostały wyposażone w
+              sterowanie Sinumerik zintegrowanym PLC. Stworzono programy dla sterowników PLC (Step 7), a także
+              wizualizację dla paneli operatorskich HMI (HMI Pro CS, TIA Portal). Stworzono również programy
+              NC dla sterownia numerycznego Sinumerik. Zaprogramowano przekaźniki bezpieczeństwa firmy Pilz.
+              Zintegrowano urządzenia wykorzystane do realizacji projektu. Wszystko zostało skonfigurowane, uruchomione
+              i przetestowane.</p>
+            <br>
+
+            <p class="project-description__txt"><strong>Urządzenia wykorzystane do realizacji projektu:</strong><br><br>
+              - Sterowniki PLC S7-300 CPU317-2 PN/DP<br>
+              - Panele operatorske SIMATIC HMI TP700<br>
+              - System sterowania numerycznego SINUMERIK<br>
+              - SIMATIC ET200SP - moduły interfejsu profinet, moduły wejść/wyjść<br>
+              - Wyspy zaworowe Festo<br>
+              - Przekaźniki bezpieczeństwa Pilz<br>
+              - Skanery kodów SR-1000 Keyence<br>
+              - Inne ...<br>
+            </p>
+          </article>
+        </div>
+        <aside class="sidebar content cell">
+          <h1 class="sidebar__header">Integracja urządzeń firm: </h1>
+          <figure class="sidebar-images">
+            <a class="sidebar-images__img" href="https://new.siemens.com/pl/pl.html" target="_blank"><img
+                src="../images/logo_firm/siemens.png" alt="siemens"></a>
+            <a class="sidebar-images__img" href="https://www.fanuc.eu/pl/pl" target="_blank"><img
+                src="../images/logo_firm/fanuc.jpg" alt="fanuc"></a>
+            <a class="sidebar-images__img" href="https://www.comau.com/en" target="_blank"><img
+                src="../images/logo_firm/comau.jpg" alt="comau"></a>
+            <a class="sidebar-images__img" href="https://www.festo.com/cms/pl_pl/index.htm" target="_blank"><img
+                src="../images/logo_firm/festo.png" alt="festo"></a>
+            <a class="sidebar-images__img" href="https://www.smc.eu/pl-pl" target="_blank"><img
+                src="../images/logo_firm/smc.png" alt="smc"></a>
+            <a class="sidebar-images__img" href="https://www.clecotools.com/" target="_blank"><img
+                src="../images/logo_firm/cleco.png" alt="cleco"></a>
+            <a class="sidebar-images__img" href="https://www.pilz.com/pl-PL" target="_blank"><img
+                src="../images/logo_firm/pilz.png" alt="pilz"></a>
+            <a class="sidebar-images__img" href="https://www.balluff.com/" target="_blank"><img
+                src="../images/logo_firm/balluff.png" alt="balluff"></a>
+            <a class="sidebar-images__img" href="https://www.keyence.eu/plpl/" target="_blank"><img
+                src="../images/logo_firm/keyence.png" alt="keyence"></a>
+            <a class="sidebar-images__img" href="https://www.cognex.com/" target="_blank"><img
+                src="../images/logo_firm/cognex.png" alt="cognex"></a>
+            <a class="sidebar-images__img sidebar-images__img--tablet" href="https://www.kistler.com/en/"
+              target="_blank"><img src="../images/logo_firm/kistler.jpg" alt="kistler"></a>
+            <a class="sidebar-images__img sidebar-images__img--tablet" href="https://www.sick.com/pl/pl/"
+              target="_blank"><img src="../images/logo_firm/sick.png" alt="sick"></a>
+            <a class="sidebar-images__img sidebar-images__img--tablet" href="https://omron.pl/pl/home"
+              target="_blank"><img src="../images/logo_firm/omron.png" alt="omron"></a>
+            <a class="sidebar-images__img sidebar-images__img--tablet"
+              href="https://www.sew-eurodrive.pl/strona_glowna.html" target="_blank"><img
+                src="../images/logo_firm/sew.png" alt="sew"></a>
+            <a class="sidebar-images__img sidebar-images__img--tablet" href="http://www.eaton.pl/EatonPL/index.htm"
+              target="_blank"><img src="../images/logo_firm/eaton.png" alt="eaton"></a>
+            <a class="sidebar-images__img sidebar-images__img--mobile sidebar-images__img--tablet"
+              href="https://www.se.com/pl/pl/" target="_blank"><img src="../images/logo_firm/schneider.png"
+                alt="schneider"></a>
+          </figure>
+        </aside>
+      </div>
+    </section>
+
+    <section class="portfolio content row" id="goToPortfolio">
+      <header class="portfolio-header content__container container">
+        <h1 class="portfolio-header__header">Portfolio</h1>
+        <p class="portfolio-header__description">Zobacz co robiłem</p>
+      </header>
+      <ul class="portfolio-projects content__container container">
+        <li class="portfolio-project cell">
+          <figure class="portfolio-project__overlay">
+            <a class="portfolio-project__photo" href="./project_1.html"><img
+                src="../images/portfolio_v2/laptop-books_626x417.jpg" alt="project1"></a>
+            <a class="portfolio-project__link" href="./project_1.html">
+              <i class="portfolio-project__icon icon-search"></i>
+              <p class="portfolio-project__description">Automatyzacja celi</p>
+            </a>
+          </figure>
+        </li>
+        <li class="portfolio-project cell">
+          <figure class="portfolio-project__overlay">
+            <a class="portfolio-project__photo" href="./project_2.html"><img
+                src="../images/portfolio_v2/books-laptop-cup_626x417.jpg" alt="project2"></a>
+            <a class="portfolio-project__link" href="./project_2.html">
+              <i class="portfolio-project__icon icon-search"></i>
+              <p class="portfolio-project__description">Sterowanie pracą pieca (PLC, OPC Serwer, InTouch)</p>
+            </a>
+          </figure>
+        </li>
+        <li class="portfolio-project cell">
+          <figure class="portfolio-project__overlay">
+            <a class="portfolio-project__photo" href="./project_3.html"><img
+                src="../images/portfolio_v2/laptop-headphones_626x417.jpg" alt="project3"></a>
+            <a class="portfolio-project__link" href="./project_3.html">
+              <i class="portfolio-project__icon icon-search"></i>
+              <p class="portfolio-project__description">Stanowisko dokręcania nakrętek</p>
+            </a>
+          </figure>
+        </li>
+        <li class="portfolio-project cell">
+          <figure class="portfolio-project__overlay">
+            <a class="portfolio-project__photo" href="./project_4.html"><img
+                src="../images/portfolio_v2/books-laptop-flowers_626x417.jpg" alt="project4"></a>
+            <a class="portfolio-project__link" href="./project_4.html">
+              <i class="portfolio-project__icon icon-search"></i>
+              <p class="portfolio-project__description">Stanowisko szkoleniowe z prasą Kistler</p>
+            </a>
+          </figure>
+        <li class="portfolio-project cell">
+          <figure class="portfolio-project__overlay">
+            <a class="portfolio-project__photo" href="./project_5.html"><img
+                src="../images/portfolio_v2/books-laptop-camera_626x417.jpg" alt="project5"></a>
+            <a class="portfolio-project__link" href="./project_5.html">
+              <i class="portfolio-project__icon icon-search"></i>
+              <p class="portfolio-project__description">Stanowisko montażu koła fonicznego</p>
+            </a>
+          </figure>
+        </li>
+        <li class="portfolio-project cell">
+          <figure class="portfolio-project__overlay">
+            <a class="portfolio-project__photo" href="./project_6.html"><img
+                src="../images/portfolio_v2/pens-laptop-pens_626x417.jpg" alt="project6"></a>
+            <a class="portfolio-project__link" href="./project_6.html">
+              <i class="portfolio-project__icon icon-search"></i>
+              <p class="portfolio-project__description">Linia obróbki wału korbowego</p>
+            </a>
+          </figure>
+        </li>
+      </ul>
+    </section>
+
+    <section class="bottom-contact content row" id="goToContact">
+      <div class="bottom-contact__content content__container container">
+        <h1 class="bottom-contact__logo cell">
+          <a href="https://dpietraszko.github.io/" target="_blank"><img src="../images/logo/logo_dp_v3.png"
+              alt="logo"></a>
+        </h1>
+        <ul class="bottom-contact__info cell">
+          <li class="bottom-contact__phone">
+            <a href="tel:+48660572789" class="contact-link">
+              <i class="icon-phone"></i>+48 660 572 789
+            </a>
+          </li>
+          <li class="bottom-contact__mail">
+            <a href="mailto:kdpietraszko@wp.pl" class="contact-link">
+              <i class="icon-mail-alt"></i>kdpietraszko@wp.pl
+            </a>
+          </li>
+          <li class="bottom-contact__git">
+            <a href="https://github.com/dpietraszko?tab=repositories" target="_blank" class="social-link">
+              <i class="icon-git"></i>
+            </a>
+          </li>
+          <li class="bottom-contact__in">
+            <a href="https://pl.linkedin.com/in/dawid-pietraszko-0a1879127" target="_blank" class="social-link">
+              <i class="icon-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+        <div class="bottom-contact__logo cell">
+          <a href="https://dpietraszko.github.io/" target="_blank"><img src="../images/logo/logo_dp_v5.png"
+              alt="logo"></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer row">
+    <p>&copy; 2020 Dawid Pietraszko. Thank you for visit. All Rights Reserved.</p>
+  </footer>
+
+
+  <script src="../js/app.js"></script>
+</body>
+
+</html>
