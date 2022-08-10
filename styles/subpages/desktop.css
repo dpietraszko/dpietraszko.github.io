@@ -392,7 +392,7 @@ input {
 .portfolio-projects {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 33% 33.3% 33.6%;
 }
 
 .portfolio-project {
